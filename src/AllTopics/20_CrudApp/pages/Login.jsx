@@ -27,7 +27,10 @@ const Login = () => {
 
   return (
     <section className="h-screen bg-gray-100 grid place-items-center">
-      <form className="p-10 bg-white shadow-lg rounded scale-150" onSubmit={handleForm}>
+      <form
+        className="p-10 bg-white shadow-lg rounded scale-150"
+        onSubmit={handleForm}
+      >
         <h1 className="font-semibold text-xl mb-5">Login Form</h1>
         <div className="flex flex-col mb-5">
           <label
