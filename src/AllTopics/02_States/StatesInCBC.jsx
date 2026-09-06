@@ -23,7 +23,7 @@ class StatesInCBC extends Component {
     };
 
     reset = () => {
-        thiis.setState({count: 0});
+        this.setState({count: 0});
     };
 
     render() {

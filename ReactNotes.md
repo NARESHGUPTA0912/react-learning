@@ -1,4 +1,70 @@
 <!-- 23/2/26 -->
+
+# Project Setup
+--------------------
+
+Get-ExecutionPolicy
+RemoteSigned or Unrestricted  // its ok
+
+if restricted:
+Set-ExecutionPolicy RemoteSigned
+
+afterthat ExecutionPolicy change shows then write Y then again check:
+Get-ExecutionPolicy
+
+check node version:
+node -v  		// it shows node version if installed
+
+create React app:
+vite command:
+
+npx create-vite@latest react-app
+
+|
+o  Select a framework:
+|  React
+|
+o  Select a variant:
+|  JavaScript
+|
+o  Use Vite 8 beta (Experimental)?:
+|  No
+|
+o  Install with npm and start now?
+|  Yes
+|
+o  Scaffolding project in C:\Users\Public\Qspider Classes\React\react-app...
+|
+o  Installing dependencies with npm...
+
+added 157 packages, and audited 158 packages in 3m
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+4 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+|
+o  Starting dev server...
+
+> react-app@0.0.0 dev
+> vite
+
+
+  VITE v7.3.1  ready in 809 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+after this copy the link and run on browser it shows Vite + react logo
+
+
+
 <!-- my notes for my personal understanding. -->
 # What is React ?
 
@@ -247,3 +313,28 @@ Redux:
 -> main -> App -> 
 
 # State Uplifting : siblings share same state
+
+
+
+<!-- April 2 -->
+-> react-hot-toast
+provide toast("") used for pop up message
+
+
+
+// json-server --watch db.json --port 5000 
+
+
+----------------------------------
+<!-- 7 April -->
+Dom -- DOM stands for document object model that represents the html or xml document as a tree like structure, where each node represents an element, attribute, comment, text in the document.
+-> When a webpage is loaded, browser creates a dom tree that represents the document structure and content.
+
+# Dom API: The dom api is a set of programming interfaces(methods) that allow developers to interact with the dom tree and manipulate the content, structure of web document.
+-> With the help of DOM API, we can create, update, delete the elements, attributes, change css styles, handled events and much more. 
+
+<!-- methods -->
+1) document.getElementById("id"); = Single Element
+2) document.getElementByClass("class"); = HTML Collection
+3) document.getElementByTagName("tag"); = HTML Collection
+4) document.querySelector(:)

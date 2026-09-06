@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import Loader from "../components/loader/Loader";
+import toast from "react-hot-toast";
 
 const AllUsersPage = () => {
   const [allUsers, setAllUsers] = useState([]);
@@ -9,9 +11,9 @@ const AllUsersPage = () => {
   async function getUsers() {
     setLoading(true);
     try {
-      let resp = await axios.get("http://localhost:9000/users");
+      let resp = await axios.get("http://localhost:5000/users");
       console.log(resp);
-
+      
       setTimeout(() => {
         setAllUsers(resp.data);
         setLoading(false);
@@ -23,13 +25,15 @@ const AllUsersPage = () => {
       // setLoading(false);
     }
   }
-
+  
   async function deleteUser(id) {
     try {
-      let resp = await axios.delete(`http://localhost:9000/users/${id}`);
+      let resp = await axios.delete(`http://localhost:5000/users/${id}`);
       console.log(resp);
+      toast.success("User Deleted")
     } catch (error) {
       console.log(error);
+      toast.error("Unable to delete")
     }
   }
 
@@ -58,7 +62,7 @@ const AllUsersPage = () => {
                 {user.email}
               </p>
               <div>
-                <button>Edit</button>
+                <Link to={`/edit-user/${user.id}`}>Edit</Link>
                 <button onClick={() => deleteUser(user.id)}>Delete</button>
               </div>
             </div>

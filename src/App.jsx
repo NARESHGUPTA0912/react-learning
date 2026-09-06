@@ -17,6 +17,8 @@ import ParentHoc from "./AllTopics/17_Hoc/ParentHoc";
 import ReduxCounter from "./AllTopics/18_Redux/ReduxCounter";
 import VirtualizedList from "./AllTopics/19_Virtualization/VirtualizedList";
 import CrudApp from "./AllTopics/20_CrudApp/CrudApp";
+import ErrorCounter from "./AllTopics/22_ErrorBoundary/Counter";
+import ErrorBoundaryCBC from "./AllTopics/22_ErrorBoundary/ErrorBoundaryCBC";
 
 // import React, { useState } from "react";
 // import Navbar from "./AllTopics/09_ReactCss/Navbar";
@@ -51,8 +53,9 @@ const App = () => {
 
   return (
     <>
-      {/* <FunctionBased/>
-            <ClassBased/>   
+      {/*
+       <FunctionBased/>
+            <ClassBased/>
             <StatesInFBC/>  */}
       {/* <ThemeChange/> */}
       {/* <Counter/> */}
@@ -111,6 +114,9 @@ const App = () => {
           {/* <ReduxCounter /> */}
           {/* <VirtualizedList /> */}
           <CrudApp />
+          {/* <ErrorBoundaryCBC>
+            <ErrorCounter />
+          </ErrorBoundaryCBC> */}
 
     </>
   );

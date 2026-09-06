@@ -1,28 +1,34 @@
 {
   "users": [
     {
-      "username": "john",
-      "email": "john@gmail.com",
-      "password": "1234",
-      "id": "CFq4nLhYheo"
-    },
-    {
       "username": "Test",
       "email": "test@gmail.com",
       "password": "123",
       "id": "jHTLAIBDNMA"
     },
     {
-      "username": "abc",
-      "email": "abc@gmail.com",
-      "password": "123",
-      "id": "4ykv8n52fA0"
-    },
-    {
       "username": "Naresh Gupta",
       "email": "nareshgupta@gmail.com",
       "password": "123456",
       "id": "v8KgfspXu24"
+    },
+    {
+      "username": "Anushka Pal",
+      "email": "anushka1707@gmail.com",
+      "password": "07022003",
+      "id": "iFF8XW1cSd8"
+    },
+    {
+      "username": "Shubham Gupta",
+      "email": "shubham123@gmail.com",
+      "password": "123456",
+      "id": "TEQZTAe14tY"
+    },
+    {
+      "username": "John",
+      "email": "john@gmail.com",
+      "password": "123",
+      "id": "QxxRBCzgyNM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 const CreateUserPage = () => {
   const [formData, setFormData] = useState({
@@ -31,11 +32,13 @@ const CreateUserPage = () => {
       // console.log(resp);
 
       //! USING AXIOS
-      let resp = await axios.post("http://localhost:9000/users", formData);
+      let resp = await axios.post("http://localhost:5000/users", formData);
       console.log(resp);
+      toast.success("User Created Successfully");
       navigate("/all-users");
     } catch (error) {
       console.log(error);
+      toast.error("Unable to create user");
     }
   };
 

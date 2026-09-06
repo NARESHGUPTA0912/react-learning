@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import toast from "react-hot-toast";
 const Login = () => {
   const [form, setForm] = useState({
     email: "",
@@ -22,6 +22,7 @@ const Login = () => {
     };
     console.log(payload);
     sessionStorage.setItem("token", Date.now());
+    toast.success("Login Successfully")
     navigate("/");
   };
 

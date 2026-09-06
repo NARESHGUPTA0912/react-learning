@@ -1,10 +1,12 @@
 // ! React way
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import CodeSplittingExample from "./AllTopics/21_CodeSplitting/CodeSplittingExample";
 import "./index.css";           // global css
 createRoot(document.getElementById("root")).render(
     
     <App/>
+    // <CodeSplittingExample /> 
     
 
     /*
