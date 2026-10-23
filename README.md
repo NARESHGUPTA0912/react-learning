@@ -77,6 +77,7 @@ npm start
 * Build a strong frontend foundation
 * Understand component-based architecture
 * Prepare for real-world React projects
+* Improving theoretical and practical knowledge 
 
 ---
 
